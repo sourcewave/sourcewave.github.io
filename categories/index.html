@@ -1,0 +1,25 @@
+---
+layout: default
+title: Categories
+---
+
+<div class="postwidth">
+  <div class="author-page">
+        <h3>Categories</h3>
+  </div>
+   <div class="byline-heading">
+       <h4>Latest</h4>
+   </div>
+
+   {% for category in site.data.categories %}
+         <h1><a href="{{ category.page }}">{{ category.name }}</a></h1>
+         {{ category.description }}
+   {% endfor %}
+there's nothing here
+   {% for author in site.data.authors %}
+      <h1><a class="header" href="{{ author.page }}">{{ author.display_name }}</a></h1>
+      {{ author.bio }}
+   {% endfor %}
+</div>
+
+{% include subscribe.html %}
