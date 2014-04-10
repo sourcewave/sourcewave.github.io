@@ -1,2 +1,4 @@
-alanmcgee.github.io
+Sharewave's Developer Blog
 ===================
+
+devblog.sharewave.com
