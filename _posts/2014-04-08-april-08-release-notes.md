@@ -24,4 +24,3 @@ Smaller bits and pieces:
 - Users can retract and archive at the same time (optionally) rather than it being two independent steps
 
 - The navbar is now even flatter visually with many of the drop shadows removed
-
