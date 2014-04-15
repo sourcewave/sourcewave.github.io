@@ -1,8 +1,6 @@
 name: Sharewave Blog
 markdown: redcarpet
 pygments: true
-kramdown:
-  input: GFM
 
 url: http://blog.sharewave.com
 permalink: :title
