@@ -42,6 +42,10 @@ blockquote p{
     line-height: 2;
 }
 
+blockquote {
+    margin-left: -22px;
+}
+
 strong {
     color: #666666;
     font-weight: normal;
@@ -60,10 +64,6 @@ select, textarea,  input[type="email"] {
     margin-right: auto;
     margin-bottom: -112px;
     margin-left: auto;
-}
-
-li {
-    list-style-type: none;
 }
 
 ul.tag-list li {
@@ -135,11 +135,29 @@ p {
     margin: 60px auto 0px;
 }
 
+.site h2 {
+    font-family: 'FS Elliot Web Regular', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: normal !important; 
+    color: #666666;
+    margin: 60px auto 0px;
+}
+
+.site h3 {
+    font-family: 'FS Elliot Web Regular', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: normal !important; 
+    color: #666666;
+    margin: 60px auto 0px;
+    
+}
+
 .site h4 {
     font-family: 'FS Elliot Web Regular', sans-serif !important;
     font-size: 14px !important;
     line-height: 20px;
     font-weight: normal; 
+    text-align: left;
 }
 
 .pagelink a {
@@ -204,6 +222,14 @@ a.header {
 
 .post ul, .post ol {
   margin-left: 1.35em;
+  margin-bottom: 40px;
+}
+
+
+.post li {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 2px;
 }
 
 .post code {
@@ -335,34 +361,42 @@ div.fixednav{
 }
 
 .footerLinks ul {
-
     list-style-type:none;
-    min-height: 20px;
-    margin: 10px 0;
-    padding: 3px 0px;
-    color: #8d8d8d;
+    display: inline-block;
+    vertical-align: top;
+    margin: 30px 40px 20px 20px;
+    line-height: 18px;
+    font-size: 12px;
+    -webkit-font-smoothing: auto;
+}
+
+.footerLinks ul li:first-child {
+    text-transform: uppercase;
+    color: #476380;
+    font-family:'FS Elliot Web Bold', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 12px;
 }
 
 .footerLinks li {
-    display: inline;
-    padding: 0px 8px;
+    padding: 0 8px;
 }
 
 .footerLinks li a {
-    color: #8d8d8d;
-    font-family: 'FS Elliot Web Regular', sans-serif;
+    color: #F1F1F1;
+    font-family:'FS Elliot Web Regular', sans-serif;
     font-size: 12px;
     font-weight: normal;
     text-decoration: none;
+    line-height: 18px;
 }
 
-
 .footerLinks li:last-child {
-    border-right: 0px;
+    border-right: 0;
 }
 
 .footerBar {
-    height: 112px;
+    min-height: 112px;
     background-color: #1e2d3d;
 }
 
@@ -371,14 +405,22 @@ div.fixednav{
 }
 
 .copyright {
-    color: #8d8d8d;
-    font-family: 'FS Elliot Web Regular', sans-serif;
-    font-size: 10px;
+    text-transform: uppercase;
+    font-family:'FS Elliot Web Bold', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: #476380;
     font-weight: normal;
+    text-decoration: none;
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    line-height: 18px;
 }
 
 .copyright.pull-right {
-    margin-right: 8px;
+    float: right;
 }
 
 .copyright.pull-left {
@@ -607,6 +649,11 @@ li.subleft {
     margin-top: 15px;
 }
 
+.subleft > h4 {
+    margin-left: 5px;
+    color: #666666;
+}
+
 li.subcenter {
     display: inline-block;
     vertical-align: top;
@@ -625,11 +672,6 @@ li.subright {
     margin-top: 30px;
     font: 12px !important;
     text-align: left;
-}
-
-li.subright img {
-    width: 80%;
-    margin-bottom: 10px;
 }
 
 .gravatar img {
@@ -761,7 +803,7 @@ div.byline-block {
   margin-left: -75px;
 }
 
-.image-container img {
+.image-container iframe {
   max-width: 100%;
 }
 
@@ -769,4 +811,9 @@ div.byline-block {
   border-bottom: solid 1px #C7C7C7 !important;
   margin-top: 80px;
   margin-bottom: 30px;
+}
+
+.container.scaling {
+    width: 100%;
+    margin: 0 auto 0 auto;
 }
